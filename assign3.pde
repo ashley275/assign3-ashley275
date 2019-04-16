@@ -124,7 +124,7 @@ void draw() {
           int soilType = y/4;
           PImage img = soil[soilType];
           image( img, spacing*x, spacing*y+160 ); 
-               println("1");
+               
           /// --Stone
           switch(soilType){
             case 0:
@@ -155,7 +155,7 @@ void draw() {
       // Soldier
       image( soldier, soldierX += 5, soldierY );
       if( soldierX > width ) soldierX = -spacing;
-      
+      println("1");
       if( soldierX<playerX+80 && soldierX+80>playerX
        && soldierY<realPlayerY+80 && soldierY+80>realPlayerY ){
         playerHealth -= 1;       
