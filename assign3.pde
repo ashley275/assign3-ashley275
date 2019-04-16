@@ -115,7 +115,7 @@ void draw() {
       // Grass
       fill( 124, 204, 25 );
       noStroke();
-      rect( 0, 160-GRASS_HEIGHT, width, 160 );
+      rect( 0, 160-GRASS_HEIGHT, width, spacing*2 );
                        
       // Ground
       for( int x=0; x<8; x++ ){
