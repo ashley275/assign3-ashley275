@@ -111,7 +111,7 @@ void draw() {
       // Rolling
       pushMatrix();
       translate( 0, cameraOffsetY );
-     println("1");
+
       // Grass
       fill( 124, 204, 25 );
       noStroke();
@@ -124,7 +124,7 @@ void draw() {
           int soilType = y/4;
           PImage img = soil[soilType];
           image( img, spacing*x, spacing*y+160 ); 
-          
+               println("1");
           /// --Stone
           switch(soilType){
             case 0:
