@@ -124,7 +124,7 @@ void draw() {
           int soilType = y/4;
           PImage img = soil[soilType];
           image( img, spacing*x, spacing*y+160 ); 
-               
+                println("1");     
           /// --Stone
           switch(soilType){
             case 0:
@@ -142,7 +142,7 @@ void draw() {
               if( (x+y)%3 == 0 ) image( stone2, spacing*x, spacing*y+160 );
             break;
       } } }
-      println("1");
+
       // Cabbage
       if( cabbageX+20<playerX+80 && cabbageX+60>playerX
        && cabbageY+20<realPlayerY+80 && cabbageY+60>realPlayerY ){
