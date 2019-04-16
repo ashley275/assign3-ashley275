@@ -107,11 +107,11 @@ void draw() {
       strokeWeight( 5 );
       fill( 253, 184, 19 );
       ellipse( 590, 50, 120, 120 );
-
+println("1"); 
       // Rolling
       pushMatrix();
       translate( 0, cameraOffsetY );
-println("1");      
+     
       // Grass
       fill( 124, 204, 25 );
       noStroke();
