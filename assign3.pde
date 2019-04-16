@@ -50,24 +50,24 @@ void setup() {
   cabbageY = spacing * floor(random(0,4)) + 160;
   
   // Enter your setup code here (please put loadImage() here or your game will lag like crazy)
-  title = loadImage("img/title.jpg");
-  gameover = loadImage("img/gameover.jpg");
-  startNormal = loadImage("img/startNormal.png");
-  startHovered = loadImage("img/startHovered.png");
-  restartNormal = loadImage("img/restartNormal.png");
-  restartHovered = loadImage("img/restartHovered.png");
+  title = loadImage("Img/title.jpg");
+  gameover = loadImage("Img/gameover.jpg");
+  startNormal = loadImage("Img/startNormal.png");
+  startHovered = loadImage("Img/startHovered.png");
+  restartNormal = loadImage("Img/restartNormal.png");
+  restartHovered = loadImage("Img/restartHovered.png");
 
-  bg = loadImage("img/bg.jpg");
-  life = loadImage("img/life.png");
-  cabbage = loadImage("img/cabbage.png");
-  soldier = loadImage("img/soldier.png");
-  stone1 = loadImage("img/stone1.png");
-  stone2 = loadImage("img/stone2.png");
-  groundhog = loadImage("img/groundhogIdle.png");
-  groundhogDown = loadImage("img/groundhogDown.png");
-  groundhogLeft = loadImage("img/groundhogLeft.png");
-  groundhogRight = loadImage("img/groundhogRight.png");
-  for( int n=0; n<soil.length; n++ ) soil[n] = loadImage("img/soil"+n+".png");
+  bg = loadImage("Img/bg.jpg");
+  life = loadImage("Img/life.png");
+  cabbage = loadImage("Img/cabbage.png");
+  soldier = loadImage("Img/soldier.png");
+  stone1 = loadImage("Img/stone1.png");
+  stone2 = loadImage("Img/stone2.png");
+  groundhog = loadImage("Img/groundhogIdle.png");
+  groundhogDown = loadImage("Img/groundhogDown.png");
+  groundhogLeft = loadImage("Img/groundhogLeft.png");
+  groundhogRight = loadImage("Img/groundhogRight.png");
+  for( int n=0; n<soil.length; n++ ) soil[n] = loadImage("Img/soil"+n+".png");
 }
 
 void draw() {
