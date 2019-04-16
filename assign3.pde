@@ -142,7 +142,7 @@ void draw() {
               if( (x+y)%3 == 0 ) image( stone2, spacing*x, spacing*y+160 );
             break;
       } } }
-
+      println("1");
       // Cabbage
       if( cabbageX+20<playerX+80 && cabbageX+60>playerX
        && cabbageY+20<realPlayerY+80 && cabbageY+60>realPlayerY ){
@@ -155,7 +155,7 @@ void draw() {
       // Soldier
       image( soldier, soldierX += 5, soldierY );
       if( soldierX > width ) soldierX = -spacing;
-      println("1");
+
       if( soldierX<playerX+80 && soldierX+80>playerX
        && soldierY<realPlayerY+80 && soldierY+80>realPlayerY ){
         playerHealth -= 1;       
