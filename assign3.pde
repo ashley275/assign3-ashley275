@@ -120,12 +120,12 @@ void draw() {
       // Ground
       for( int x=0; x<8; x++ ){
         for( int y=0; y<24; y++ ){
-	println("1");
+	
           /// --Soil
           int soilType = y/4;
           PImage img = soil[soilType];
           image( img, spacing*x, spacing*y+160 ); 
-    
+    println("1");
           /// --Stone
           switch(soilType){
             case 0:
