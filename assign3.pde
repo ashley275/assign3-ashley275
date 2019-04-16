@@ -56,7 +56,7 @@ void setup() {
   startHovered = loadImage("img/startHovered.png");
   restartNormal = loadImage("img/restartNormal.png");
   restartHovered = loadImage("img/restartHovered.png");
-println("1"); 
+ 
   bg = loadImage("img/bg.jpg");
   life = loadImage("img/life.png");
   cabbage = loadImage("img/cabbage.png");
@@ -107,7 +107,7 @@ void draw() {
       strokeWeight( 5 );
       fill( 253, 184, 19 );
       ellipse( 590, 50, 120, 120 );
-
+println("1");
       // Rolling
       pushMatrix();
       translate( 0, cameraOffsetY );
