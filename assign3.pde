@@ -121,12 +121,12 @@ void draw() {
       for( int x=0; x<8; x++ ){
         for( int y=0; y<24; y++ ){
           /// --Soil
-          int soilType = y/4;
-          PImage img = soil[soilType];
-          image( img, spacing*x, spacing*y+160 ); 
+          int B = y/4;
+          PImage A = soil[B];
+          image( A, spacing*x, spacing*y+160 ); 
 
           /// --Stone
-          switch(soilType){
+          switch(B){
             case 0:
             case 1:
               if( x == y ) image( stone1, spacing*x, spacing*y+160 );
