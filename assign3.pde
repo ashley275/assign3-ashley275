@@ -124,8 +124,9 @@ void draw() {
           /// --Soil
           int soilType = y/4;
           PImage img = soil[soilType];
-	      println("1");
+	      println("F"+y);
           image( img, spacing*x, spacing*y+160 ); 
+	  println("A"+y);
 
           /// --Stone
           switch(soilType){
