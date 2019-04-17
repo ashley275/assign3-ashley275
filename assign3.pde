@@ -124,7 +124,7 @@ void draw() {
           int type = y/4;
           PImage img = soil[type];
 	  println(spacing*y+160);
-          image( img, spacing*x, spacing*y+160 ); 
+          image( img, 0, 0 ); 
 
           /// --Stone
           switch(type){
