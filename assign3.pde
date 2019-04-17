@@ -121,7 +121,7 @@ void draw() {
       for( int x=0; x<8; x++ ){
         for( int y=0; y<24; y++ ){
           /// --Soil
-          int type = y/4;
+          int type = floor(y/4);
           PImage img = soil[type];
 	  println(type);
           image( img, spacing*x, spacing*y+160 ); 
