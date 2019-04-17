@@ -123,6 +123,7 @@ void draw() {
           /// --Soil
           //int type = y/4;
           //PImage img = soil[type];
+	  println("1");
           image( soil[4], spacing*x, spacing*y+160 ); 
 
           /// --Stone
