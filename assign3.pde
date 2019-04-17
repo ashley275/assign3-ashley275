@@ -20,7 +20,7 @@ boolean downPressed, rightPressed, leftPressed;
 boolean movingDown, movingRight, movingLeft;
 
 int spacing, C, R, T;
-float SPD, playerX, playerY, realPlayerY;
+float SPD, playerX, playerY, realPlayerY, groundY;
 float soldierX, soldierY, cabbageX, cabbageY;
 
 PImage soil[] = new PImage[6];
@@ -110,7 +110,7 @@ void draw() {
 
       // Rolling
       pushMatrix();
-      translate( 0, cameraOffsetY );
+      translate( 0, groundY );
 
       // Grass
       fill( 124, 204, 25 );
@@ -165,7 +165,7 @@ void draw() {
         T = 0;
         C = 5;
         R = 0;
-        cameraOffsetY = 0;
+        groundY = 0;
         DIR = true;
         playerX = spacing*4;
         playerY = spacing*1;
@@ -209,14 +209,14 @@ void draw() {
             DIR = false;
             T ++;
             realPlayerY += SPD;
-            if( R < 20 ) cameraOffsetY -= SPD;              
+            if( R < 20 ) groundY -= SPD;              
             else playerY += SPD;
           }else{          
             DIR = true; 
             T = 0;
             R += 1;
             playerY = round(playerY);
-            cameraOffsetY = round(cameraOffsetY);
+            groundY = round(groundY);
             realPlayerY = round(realPlayerY);
             movingDown = ( downPressed ) ? true : false;
           }
@@ -286,7 +286,7 @@ void draw() {
           mousePressed = false;
           // Remember to initialize the game here!    
           playerHealth = 2;
-          cameraOffsetY = 0;
+          groundY = 0;
           DIR = true;
           T = 0;
           C = 5;
